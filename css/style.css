@@ -1,0 +1,452 @@
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #fff;
+	font-weight: 300;
+	color: #848588;
+	font-display: swap;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	color: #E97406;
+	line-height: 1.5em !important;
+}
+
+p, li {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	color: #848588;
+	font-weight: 300;
+	line-height: 1.35em;
+}
+
+a {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	color: #848588;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #848588;
+}
+
+b, strong {
+	font-weight: 500 !important;
+}
+
+.bg_orange {
+	background-color: #E97406;
+}
+
+.bg_orange_header {
+	background-color: rgba(233,116,6,.8)
+}
+
+.text_orange {
+	color: #E97406;
+}
+
+.bg_white {
+	background-color: #fff;
+}
+
+.text_white {
+	color: #fff;
+}
+
+.text_gray {
+	color: #848588;
+}
+
+.text_medium {
+	font-size: 24px;
+	line-height: 1.75em;
+}
+
+.text_small {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.text_lighter {
+	font-weight: 300;
+}
+
+.border_r_20 {
+	border-radius: 20px;
+}
+
+h2 {
+	font-size: calc(2rem + .9vw) !important;
+}
+
+.border_b_orange {
+	border-bottom: 4px solid #E97406;
+}
+
+.border_b_green {
+	border-bottom: 1px solid #7CC291;
+}
+
+.border_bx_orange {
+	border-bottom: 1px solid #E97406;
+	border-left: 1px solid #E97406;
+	border-right: 1px solid #E97406;
+	border-radius: 0 0 52px 52px;
+}
+
+.border_bx_green {
+	border-bottom: 1px solid #7CC291;
+	border-left: 1px solid #7CC291;
+	border-right: 1px solid #7CC291;
+	border-radius: 0 0 52px 52px;
+}
+
+.no_space_text {
+	white-space: nowrap;
+}
+
+.legal_page h1 {
+	color: #E97406;
+	font-weight: 800;
+	margin-bottom: 32px;
+}
+
+.legal_page h3 {
+	color: #E97406;
+	font-weight: 400;
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+
+.legal_page h5,
+.legal_page table {
+	color: #848588;
+}
+
+.legal_page p,
+.legal_page li {
+	color: #848588;
+	font-size: 1em;
+	line-height: 1.25em;
+	margin-bottom: 20px;
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+.legal_page p a,
+.legal_page a {
+	color: #E97406;
+	text-decoration: underline;
+}
+
+.legal_page p a:hover,
+.legal_page a:hover {
+	color: #848588;
+}
+
+.legal_page th {
+	color: #E97406;
+	font-weight: 600;
+	font-size: 16px;
+	padding: 16px 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.legal_page td {
+	color: #848588;
+	font-size: 14px;
+	padding: 8px 4% 8px 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.ot-sdk-cookie-policy,
+#cookie-policy-description,
+.ot-sdk-cookie-policy-group-desc,
+.ot-host-td {
+	font-family: 'Roboto', sans-serif !important;
+	color: #848588;
+	font-size: 1em !important;
+	margin-bottom: 20px !important;
+	font-weight: 300 !important;
+	line-height: 1.5em !important;
+} 
+
+/* HEADER */
+
+header {
+	background-color: transparent;
+}
+
+nav {
+	text-align: center;
+	color: #E97406;
+}
+
+header .navbar-nav {
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;	
+}
+
+header .nav-item {
+	position: relative;
+	height: 30px;
+	display: flex;
+	align-items: center;
+}
+
+header .nav-link {
+	color: #E97406;
+	padding: 4px 4%;
+	font-size: .75em;
+}
+
+header .nav-link:hover,
+header .nav-link:focus {
+	color: #848588;
+}
+
+header .nav-item.btn_ficha .nav-link,
+.btn_ficha a,
+button.btn_ficha {
+    background-color: #7CC291;
+    border-radius: 20px;
+    padding: 0 12px;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+}
+
+header .nav-item.btn_ficha .nav-link:hover,
+.btn_ficha a:hover,
+button.btn_ficha:hover {
+    background-color: #B7DBBF;
+    border-radius: 20px;
+    padding: 0 12px;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+}
+
+.navbar-toggler {
+	border: none !important;
+	margin: 30px auto 0 0;
+	background-color: transparent!important;
+}
+
+.navbar-toggler-icon {
+	color: #fff;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: #E97406;
+	padding: 40px 0;
+}
+
+footer p {
+	font-size: .8em;
+	line-height: 1.35em;
+	color: #fff;
+	font-weight: 300;
+}
+
+footer a {
+	color:#fff;
+	font-weight: 300;
+	text-decoration: none !important;
+}
+footer a:hover {
+	opacity: .85;
+	color:#ffffff;
+	text-decoration: none !important;
+}
+
+footer .aviso-legal a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: 400;
+}
+
+footer .aviso-legal a:hover {
+	opacity: .85;
+	color:#ffffff;
+}
+
+footer .footer_code_right {
+	transform: rotate(-90deg);
+	width: auto;
+	position: absolute;
+	right: -3rem;
+}
+
+footer .footer_code_right p {
+	color: #fff;
+	font-size: .75em;
+	font-weight: 300;
+	margin-bottom: 0;
+}
+
+/* SECTIONS */
+
+.top-container {
+	background-image: url("../source/soolantra_header_bg.jpg");
+	background-position: center;
+	background-size: cover;
+	margin-top: -84px;
+}
+
+.logo_soolantra {
+	max-width: 320px;
+}
+
+#indicacion {
+	border-top: 24px solid #7CC291;
+}
+
+#impacto {
+	background-image: url("../source/bg_impacto.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+
+/* MODAL */
+
+.modal {
+	background-color: rgba(0,0,0,.6);
+}
+
+.modal-content {
+	border-radius: 40px !important;
+}
+
+.modal-header {
+	border: none !important;
+	border-radius: 40px 40px 0 0 !important;
+}
+
+.modal-header .btn-close {
+	position: absolute;
+	top: -52px;
+	right: 0;
+	color: #fff;
+	opacity: 1;
+	margin: 0 !important;
+	background: url("../source/icon_plus_circle.svg") center no-repeat;
+	transform: rotate(45deg);
+	padding: 12px !important;
+	background-size: cover;
+	width: .75em;
+	height: .75em;
+}
+
+.modal-body {
+	border-radius: 0 0 40px 40px !important;
+	padding: 2em !important;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+	.rotate_mobile {
+		transform: rotate(90deg)
+	}
+	.navbar-toggler {
+		position: absolute;
+		top: 24px;
+	}
+	.top-container {
+		margin-top: -24px;
+	}
+	.rotate_mobile {
+		transform: rotate(90deg) !important;
+		margin: 0 auto;
+		width: auto;
+	}
+}
+
+@media (max-width: 992px) {
+	header .nav-item {
+		height: 44px;
+	}
+	.navbar {
+		margin-top: -52px;
+	}
+	.navbar-collapse {
+		background-color: #fff;
+		margin-top: 16px;
+	}
+	.navbar-collapse .nav-item {
+		align-items: start;
+		width: 100%;
+		border-bottom: 1px solid #efefef;
+	}
+	.navbar-collapse .nav-link {
+		color: #232323;
+		padding: 8px 12px;
+	}
+	.logo_galderma_header {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	header .nav-item.btn_ficha .nav-link {
+		margin: 8px 12px;
+	}
+	.navbar-collapse {
+		position: absolute;
+		top: 80px;
+		width: 100%;
+		right: 0px;
+	}
+	header {
+		position: relative;
+		z-index: 1;
+	}
+	.text_medium {
+		font-size: 1.2em;
+	}
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+	header .nav-link:hover::after,
+	header .nav-link:focus::after {
+		content: "";
+		background-color: #848588;
+		height: 4px;
+		width: 100%;
+		position: absolute;
+		bottom: -4px;
+		right: 0;
+	}
+	header .btn_ficha .nav-link:hover::after {
+		content: "";
+		background-color: transparent;
+		height: 0;
+		width: 100%;
+		position: absolute;
+		bottom: -4px;
+		right: 0;
+	}
+}
