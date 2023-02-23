@@ -1,0 +1,33 @@
+name: static-site
+type: 'nodejs:18'
+disk: 512
+
+build:
+  flavor: none
+
+hooks:
+  post_deploy: |
+    set -e
+    if [ "$PLATFORM_ENVIRONMENT_TYPE" = "production" ] || [ "$PLATFORM_ENVIRONMENT_TYPE" = "staging" ]; then
+      curl -sX POST -H 'Fastly-Key: $FASTLY_API_TOKEN' -H 'Accept: application/json' https://api.fastly.com/$FASTLY_SERVICE_ID/purge_all > fastly.txt
+    fi
+web:
+  locations:
+    '/':
+      root: 'public' # where a public directory in the repository contains the static site.
+      scripts: false
+      allow: true
+      index: ['index.html']
+      rules:
+        # allow access to common static files.
+        '\.(jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$':
+          allow: true
+          expires: 1d
+        '^/robots\.txt$':
+          allow: true
+          expires: 1d
+        '^/sitemap\.xml$':
+          allow: true
+          expires: 1d
+  commands:
+    start: sleep infinity
