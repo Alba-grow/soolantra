@@ -31,6 +31,8 @@ web:
           allow: true
           expires: 1d
       headers:
+        X-Frame-Options: SAMEORIGIN
+        Access-Control-Allow-Origin: "*"
         X-Content-Type-Options: nosniff
         X-XSS-Protection: 1; mode=block
   
