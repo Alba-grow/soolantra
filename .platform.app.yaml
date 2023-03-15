@@ -7,11 +7,10 @@ build:
 
 hooks:
   post_deploy: |
-    set -e
-    if [ "$PLATFORM_ENVIRONMENT_TYPE" = "production" ] || [ "$PLATFORM_ENVIRONMENT_TYPE" = "staging" ]; then
-      curl -sX POST -H 'Fastly-Key: $FASTLY_API_TOKEN' -H 'Accept: application/json' https://api.fastly.com/$FASTLY_SERVICE_ID/purge_all > fastly.txt
-    fi
-    
+      set -e
+      if [ "$PLATFORM_ENVIRONMENT_TYPE" = "production" ] || [ "$PLATFORM_ENVIRONMENT_TYPE" = "staging" ]; then
+          curl -sX POST -H "Fastly-Key: $FASTLY_API_TOKEN" -H "Accept: application/json" https://api.fastly.com/service/$FASTLY_SERVICE_ID/purge_all > /dev/null
+      fi
 web:
   locations:
     '/':
