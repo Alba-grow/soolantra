@@ -1,6 +1,8 @@
 'https://{default}/':
   type: upstream
   upstream: static-site:http
+  cache:
+    enabled: false
 
 'https://www.{default}/':
   type: redirect
