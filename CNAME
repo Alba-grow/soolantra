@@ -1,0 +1,11 @@
+# DNS
+tratamientorosaceagalderma.es A 151.101.194.216
+tratamientorosaceagalderma.es A 151.101.66.216
+tratamientorosaceagalderma.es A 151.101.130.216
+tratamientorosaceagalderma.es A 151.101.2.216
+
+www.tratamientorosaceagalderma.es CNAME u6kz5pdhindeo.edge.platform.sh
+
+# ACME Challenge
+_acme-challenge.tratamientorosaceagalderma.es IN CNAME cnhvtjr5jbefgdd7h72usfhzquvoxa2y4le5bvqsunatvwjmznha.validation.platform.sh
+_acme-challenge.www.tratamientorosaceagalderma.es IN CNAME txhfuszjclt7wo3y34yk56xhclesi2waetyyulpguy2sk4xyybaa.validation.platform.sh
