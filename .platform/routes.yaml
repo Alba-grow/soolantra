@@ -1,9 +1,9 @@
-'https://{default}/':
+'https://www.{default}/':
   type: upstream
   upstream: static-site:http
   cache:
     enabled: false
 
-'https://www.{default}/':
+'https://{default}/':
   type: redirect
   to: https://{default}
