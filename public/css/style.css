@@ -23,6 +23,11 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.5em !important;
 }
 
+#ot-pc-title {
+  font-size: 19px !important;
+  text-align: right !important;
+}
+
 p, li {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1em;
