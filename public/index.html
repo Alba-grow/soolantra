@@ -34,7 +34,12 @@
 			function OptanonWrapper() { }
 		</script>
 		<!-- OneTrust Cookies Consent Notice end for tratamientorosaceagalderma.es -->
-		
+		<script>
+			dataLayer = [{
+			  'pageCategory': 'signup',
+			  'visitorType': 'high-value'
+			}];
+		</script>
 		<!-- Google Tag Manager -->
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -42,7 +47,14 @@
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-P3N6XTD');</script>
 		<!-- End Google Tag Manager -->
-
+		<script>
+			function createStamp()
+			var currentTimestamp = new Date(); // Obtiene la fecha y hora actuales
+  
+			// Formato deseado para la visualización del timestamp
+			var formattedTimestamp = currentTimestamp.toISOString();
+			return formattedTimestamp;
+		</script>
 		
     </head>
     <body>
@@ -202,7 +214,7 @@
 					<div class="col-12 pt-5 text-center">
 						<h2 class="text-center"><b class="border_b_orange">LA IMPORTANCIA DE LLEGAR A IGA 0</b></h2>
 						<p class="text-center pt-4 text_lighter text_medium">La <strong>escala IGA</strong> es una escala de 5 puntos que mide la gravedad de la rosácea.<sup>5</sup><br>Alcanzando <strong>IGA 0 aliviamos el impacto emocional de la rosácea</strong>: <sup>3,9</sup></p>
-						<button type="button" class="btn_ficha text-center m-auto pt-1 pb-1 px-4" data-bs-toggle="modal" data-bs-target="#ModalIga">VER ESCALA IGA 0<sup>6</sup> <img src="source/icon_plus_circle.svg" width="16" height="16" style="margin: 0 0 2px 4px;" /></button>
+						<button type="button" onclick="dataLayer.push({'event': 'iga_scale_click','hit_timestamp': createStamp(),'link_url': 'https://www.tratamientorosaceagalderma.es/#importancia-iga','link_text': 'VER ESCALA IGA 0'});" class="btn_ficha text-center m-auto pt-1 pb-1 px-4" data-bs-toggle="modal" data-bs-target="#ModalIga">VER ESCALA IGA 0<sup>6</sup> <img src="source/icon_plus_circle.svg" width="16" height="16" style="margin: 0 0 2px 4px;" /></button>
 
 					</div>
 				</div>
