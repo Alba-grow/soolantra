@@ -332,19 +332,14 @@ footer .footer_code_right p {
 }
 
 
-/* MODAL */
+/* MODAL Escala IGA*/
 
 .modal {
 	background-color: rgba(0,0,0,.6);
 }
 
-.modal-content {
-	border-radius: 40px !important;
-}
-
 .modal-header {
 	border: none !important;
-	border-radius: 40px 40px 0 0 !important;
 }
 
 .modal-header .btn-close {
@@ -363,10 +358,8 @@ footer .footer_code_right p {
 }
 
 .modal-body {
-	border-radius: 0 0 40px 40px !important;
 	padding: 2em !important;
 }
-
 
 /* RESPONSIVE */
 
@@ -454,4 +447,61 @@ footer .footer_code_right p {
 		bottom: -4px;
 		right: 0;
 	}
+}
+
+/* Modal Profesional Sanitario */
+.modal-content {
+    border-radius: 10px !important;
+}
+.modal-header.bg-primary {
+    background-color: #E97406 !important;
+}
+
+.btn-primary {
+    background-color: #7CC291 !important;
+    border-color: #7CC291 !important;
+	border-radius: 50px;
+    width: 48%;
+}
+
+.btn-primary:hover {
+    background-color: #E97406 !important;
+    border-color: #E97406 !important;
+}
+
+@media (max-width: 767px) {
+    .modal-dialog, .modal-dialog-centered  {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .modal-header {
+        padding: 15px 10px;
+    }
+    
+    .modal-header h4 {
+        font-size: 18px;
+    }
+    
+    .modal-body {
+        padding: 15px 10px;
+    }
+    
+    .modal-body p {
+        font-size: 14px;
+    }
+    
+    .modal-footer {
+        flex-direction: row;
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .modal-footer .btn {
+        width: 48%;
+        margin: 0;
+        padding: 10px;
+        font-size: 14px;
+    }
 }
