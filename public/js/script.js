@@ -183,6 +183,43 @@
 
 }).call(this);
 
+// Modal Profesional Sanitario
+document.addEventListener('DOMContentLoaded', function() {
+  // Verificar si el usuario ya respondió anteriormente
+  var respuestaProfesional = localStorage.getItem('esProfesionalSanitario');
+  
+  // Si no es profesional sanitario, redirigir inmediatamente
+  if (respuestaProfesional === 'no') {
+      window.location.href = 'https://www.google.es';
+      return;
+  }
+  
+  // Si ya es profesional, no mostrar el modal
+  if (respuestaProfesional === 'si') {
+      return;
+  }
+  
+  // Si no hay respuesta guardada, mostrar el modal
+  var modal = new bootstrap.Modal(document.getElementById('modalProfesionalSanitario'), {
+      backdrop: 'static',
+      keyboard: false
+  });
+  
+  modal.show();
+  
+  // Botón: SOY PROFESIONAL SANITARIO
+  document.getElementById('btnSoyProfesional').addEventListener('click', function() {
+      localStorage.setItem('esProfesionalSanitario', 'si');
+      modal.hide();
+  });
+  
+  // Botón: NO SOY PROFESIONAL SANITARIO
+  document.getElementById('btnNoSoyProfesional').addEventListener('click', function() {
+      localStorage.setItem('esProfesionalSanitario', 'no');
+      window.location.href = 'https://www.google.es';
+  });
+});
+
 
 wow = new WOW(
   {
